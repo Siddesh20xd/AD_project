@@ -1,0 +1,38 @@
+import { Dimensions } from 'react-native';
+
+const { width: SCREEN_WIDTH, height: SCREEN_HEIGHT } = Dimensions.get('window');
+
+export const CONSTANTS = {
+  SCREEN_WIDTH,
+  SCREEN_HEIGHT,
+  GRAVITY: 1.2,
+  JUMP_FORCE: -20,
+  GAME_SPEED: 5,
+  PLAYER_WIDTH: 60,
+  PLAYER_HEIGHT: 60,
+  GROUND_HEIGHT: 80,
+  OBSTACLE_WIDTH: 50,
+  OBSTACLE_HEIGHT: 60,
+  BANANA_SIZE: 30,
+  SPAWN_INTERVAL: 2000,
+  BANANA_SPAWN_INTERVAL: 1500,
+  MAX_OBSTACLES: 3,
+  MAX_BANANAS: 5,
+  COLLISION_THRESHOLD: 10,
+};
+
+export const COLORS = {
+  SKY: '#87CEEB',
+  GROUND: '#8B4513',
+  PLAYER: '#FFD700',
+  OBSTACLE: '#696969',
+  BANANA: '#FFFF00',
+  TEXT: '#FFFFFF',
+};
+
+export const GAME_STATE = {
+  IDLE: 'IDLE',
+  PLAYING: 'PLAYING',
+  PAUSED: 'PAUSED',
+  GAME_OVER: 'GAME_OVER',
+};
